@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator App</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            /* Or space-between, center, etc. */
+            /* align-items: center; */
+            gap: 10px;
+            /* Optional: Add spacing between buttons */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculator App</h1>
+        <!-- <form action="/square" method="GET">
+            <label for="num">Enter a number:</label>
+            <input type="text" id="num" name="num" required>
+            <button type="submit">Calculate Square</button>
+        </form> -->
+        <div class="row">
+            <label for="num">Enter a number 1:</label>
+            <input type="text" id="a" name="a" required>
+            <label for="num">Enter a number 2:</label>
+            <input type="text" id="b" name="b" required>
+        </div>
+
+        <div class="button-container">
+            <div>
+                <a class="waves-effect waves-light btn blue" onclick="add()">+</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-light btn teal" onclick="sub()">-</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-light btn green" onclick="mul()">x</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-light btn grey" onclick="div()">/</a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="col s12 center-align">
+            <h6 id="result"></h6>
+        </div>
+
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
