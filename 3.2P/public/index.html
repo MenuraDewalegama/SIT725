@@ -20,19 +20,19 @@
 
 
 <body>
-    <ul id="kittendropdown" class="dropdown-content">
-        <li><a href="#!">Kitten1</a></li>
-        <li><a href="#!">Kitten2</a></li>
-        <li><a href="#!">Kitten3</a></li>
+    <ul id="cardropdown" class="dropdown-content">
+        <li><a href="#!">Car1</a></li>
+        <li><a href="#!">Car2</a></li>
+        <li><a href="#!">Car3</a></li>
     </ul>
-    <nav>
+    <nav class="nav1">
         <div class="nav-wrapper navbar-size">
             <a href="#" class="brand-logo"><img class="user-image-size" src="images/user.svg" /></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#"><i class="material-icons">search</i></a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="kittendropdown">Kittens<i
+                <li><a class="dropdown-trigger" href="#!" data-target="cardropdown">Cars<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/navit-choudhary-5133b9104/">LinkedIn</a></li>
+                <li><a target="_blank" href="https://github.com/MenuraDewalegama/SIT725.git">GitHub</a></li>
             </ul>
         </div>
     </nav>
@@ -48,11 +48,11 @@
                         components</p>
                 </div>
                 <div class="col s12 center-align">
-                    <img class="materialboxed materialboxed-image" src="images/video.svg">
+                    <img class="materialboxed materialboxed-image" src="images/car_.svg">
                 </div>
                 <div class="col s12 center-align">
                     <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
-                        data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>
+                        data-target="modal1"><i class="material-icons left">auto_fix_high</i>Add a car</a>
                 </div>
             </div>
 
@@ -60,18 +60,17 @@
                 <div class="col s4 center-align">
                     <div class="card small">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/cat1.svg">
+                            <img class="activator" src="images/car1.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Kitten<i
+                            <span class="card-title activator grey-text text-darken-4">Car<i
                                     class="material-icons right">more_vert</i></span>
-                            <p><a href="#">About kitten</a></p>
+                            <p><a href="#">About Car</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Kitten<i
+                            <span class="card-title grey-text text-darken-4">Car<i
                                     class="material-icons right">close</i></span>
-                            <p class="card-text grey-text text-darken-4">Hello There! I just wanted to say HI to you
-                                guys. See ya!</p>
+                            <p class="card-text grey-text text-darken-4">This is car 1</p>
                         </div>
                     </div>
                 </div>
@@ -84,19 +83,30 @@
             <div class="row modal-content">
                 <form class="col s12">
                     <div class="row">
+                        <h5 class="card-title activator grey-text text-darken-4 center-align">Car Form</h5>
+                        <br><br><br>
                         <div class="input-field col s6">
-                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                            <label for="first_name">First Name</label>
+                            <input placeholder="Toyota" id="first_name" type="text" class="validate">
+                            <label for="manufacturer">Manufacturer</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Last Name</label>
+                            <input placeholder="RAV4" id="last_name" type="text" class="validate">
+                            <label for="make">Make</label>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="input-field col s12">
                             <input id="password" type="password" class="validate">
                             <label for="password">Password</label>
+                        </div>
+                    </div> -->
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
                         </div>
                     </div>
                     <div class="row">
@@ -114,6 +124,18 @@
             </div>
         </div>
 
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+
 
     </main>
 
@@ -127,7 +149,7 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <a class="grey-text text-lighten-4 right" href="https://materializecss.com/">More Links</a>
             </div>
         </div>
     </footer>
