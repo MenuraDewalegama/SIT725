@@ -1,0 +1,16 @@
+{
+  "name": "7.2p",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Menura",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "socket.io": "^4.8.1"
+  }
+}
